@@ -6,11 +6,11 @@ spring:
   cloud:
     gateway:
       routes: 
-      - id: api-markit+0
-        uri: https://dummygtw.free.beeceptor.com
+      - id: persistence-service
+        uri: http://localhost:8085
         predicates:
-        - Method=GET
-        - Path=/api-markit/**
+        - Method=GET,POST
+        - Path=/persistence/**
       - id: face-service
         uri: http://localhost:8082
         predicates:
