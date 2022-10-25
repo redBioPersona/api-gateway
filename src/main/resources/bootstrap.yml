@@ -18,4 +18,5 @@ spring:
         - Path=/face/**
 
 #URL DE INTROSPECT
-urlClient: http://localhost:8090/client/existeCliente
+urlClient: http://localhost:8090/client/existsClient
+headerClientId: key

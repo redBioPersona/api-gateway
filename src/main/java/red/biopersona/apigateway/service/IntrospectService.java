@@ -59,7 +59,7 @@ public class IntrospectService implements IIntrospectService {
 			LinkedMultiValueMap<String, Object> body = new LinkedMultiValueMap<String, Object>();
 			body.add("token", AccessToken);
 			body.add("token_type_hint", "access_token");
-			body.add("client", client);
+			body.add("key", client);
 
 			HttpEntity<LinkedMultiValueMap<String, Object>> requestEntity = new HttpEntity<LinkedMultiValueMap<String, Object>>(
 					body, headers);
